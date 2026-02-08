@@ -1,8 +1,5 @@
 # FastAPI Platform - DevOps Implementation
 
-[![CI/CD](https://github.com/your-org/fastapi-platform/workflows/CI%2FCD%20Pipeline/badge.svg)](https://github.com/your-org/fastapi-platform/actions)
-[![Python](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/)
-
 Production-ready DevOps infrastructure for a FastAPI application with Redis backend, featuring comprehensive CI/CD, monitoring, logging, and auto-scaling capabilities.
 
 ##  Table of Contents
