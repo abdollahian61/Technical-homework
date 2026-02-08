@@ -1,7 +1,6 @@
 # FastAPI Platform - DevOps Implementation
 
 [![CI/CD](https://github.com/your-org/fastapi-platform/workflows/CI%2FCD%20Pipeline/badge.svg)](https://github.com/your-org/fastapi-platform/actions)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/)
 
 Production-ready DevOps infrastructure for a FastAPI application with Redis backend, featuring comprehensive CI/CD, monitoring, logging, and auto-scaling capabilities.
@@ -146,8 +145,6 @@ docker run --rm -i grafana/k6 run - <performance-tests/load-test.js
 
 ### Production Deployment
 
-See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for detailed production deployment instructions.
-
 **Quick Overview:**
 ```bash
 # 1. Provision infrastructure with Terraform
@@ -205,10 +202,6 @@ kubectl get svc -n production
 ├── performance-tests/            # Performance testing
 │   ├── load-test.js              # K6 load test
 │   └── locustfile.py             # Locust stress test
-│
-├── docs/                         # Documentation
-│   ├── TECHNICAL_DOCUMENTATION.md # Complete technical docs
-│   └── DEPLOYMENT.md             # Deployment guide
 │
 ├── docker-compose.yml            # Local development setup
 └── README.md                     # This file
