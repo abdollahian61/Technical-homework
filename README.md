@@ -6,7 +6,7 @@
 
 Production-ready DevOps infrastructure for a FastAPI application with Redis backend, featuring comprehensive CI/CD, monitoring, logging, and auto-scaling capabilities.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Features](#features)
 - [Architecture](#architecture)
@@ -17,41 +17,41 @@ Production-ready DevOps infrastructure for a FastAPI application with Redis back
 - [Security](#security)
 - [Contributing](#contributing)
 
-## ✨ Features
+##  Features
 
 ### Infrastructure
-- 🚀 **Kubernetes (EKS)**: Production-grade container orchestration
-- 🔄 **Auto-scaling**: HPA with CPU/Memory-based scaling (3-10 replicas)
-- 🌐 **Multi-AZ Deployment**: High availability across availability zones
-- 🏗️ **Infrastructure as Code**: Terraform for reproducible infrastructure
+-  **Kubernetes (EKS)**: Production-grade container orchestration
+-  **Auto-scaling**: HPA with CPU/Memory-based scaling (3-10 replicas)
+-  **Multi-AZ Deployment**: High availability across availability zones
+-  **Infrastructure as Code**: Terraform for reproducible infrastructure
 
 ### CI/CD
-- ⚡ **GitHub Actions**: Fully automated CI/CD pipeline
-- 🔒 **Security Scanning**: Trivy, Bandit, Safety vulnerability detection
-- 🧪 **Automated Testing**: Unit, integration, and performance tests
-- 📦 **Multi-stage Builds**: Optimized Docker images (67% size reduction)
-- 🎯 **Canary Deployments**: Safe production rollouts with automatic rollback
+-  **GitHub Actions**: Fully automated CI/CD pipeline
+-  **Security Scanning**: Trivy, Bandit, Safety vulnerability detection
+-  **Automated Testing**: Unit, integration, and performance tests
+-  **Multi-stage Builds**: Optimized Docker images (67% size reduction)
+-  **Canary Deployments**: Safe production rollouts with automatic rollback
 
 ### Monitoring & Logging
-- 📊 **Prometheus**: Metrics collection and alerting
-- 📈 **Grafana**: Visual dashboards for metrics and logs
-- 📝 **Loki**: Cost-effective log aggregation (75% cheaper than ELK)
-- 🔍 **Promtail**: Automated log collection from containers
+-  **Prometheus**: Metrics collection and alerting
+-  **Grafana**: Visual dashboards for metrics and logs
+-  **Loki**: Cost-effective log aggregation (75% cheaper than ELK)
+-  **Promtail**: Automated log collection from containers
 
 ### Performance
-- ⚡ **P95 Latency**: 320ms (target: <500ms) ✓
-- 📊 **Throughput**: 1,247 req/s (target: >1000 req/s) ✓
-- 🎯 **Error Rate**: 0.12% (target: <1%) ✓
-- 📈 **Availability**: 99.88% uptime
+-  **P95 Latency**: 320ms (target: <500ms) ✓
+-  **Throughput**: 1,247 req/s (target: >1000 req/s) ✓
+-  **Error Rate**: 0.12% (target: <1%) ✓
+-  **Availability**: 99.88% uptime
 
 ### Security
-- 🔐 **Non-root Containers**: Enhanced security posture
-- 🛡️ **Security Scanning**: Zero critical vulnerabilities
-- 🔒 **TLS/SSL**: Encrypted communications
-- 🚫 **Network Policies**: Zero-trust networking
-- 🔑 **Secrets Management**: Encrypted secrets with automatic rotation
+-  **Non-root Containers**: Enhanced security posture
+-  **Security Scanning**: Zero critical vulnerabilities
+-  **TLS/SSL**: Encrypted communications
+-  **Network Policies**: Zero-trust networking
+-  **Secrets Management**: Encrypted secrets with automatic rotation
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -86,7 +86,7 @@ Production-ready DevOps infrastructure for a FastAPI application with Redis back
       └────────────────────────┘
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -166,7 +166,7 @@ kubectl get pods -n production
 kubectl get svc -n production
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 .
@@ -214,7 +214,7 @@ kubectl get svc -n production
 └── README.md                     # This file
 ```
 
-## 📚 Documentation
+##  Documentation
 
 - **[Technical Documentation](docs/TECHNICAL_DOCUMENTATION.md)**: Complete technical specifications, architecture decisions, and justifications
 - **[Deployment Guide](docs/DEPLOYMENT.md)**: Step-by-step deployment instructions
@@ -244,52 +244,11 @@ k6 run performance-tests/load-test.js
 locust -f performance-tests/locustfile.py --host http://localhost:8000
 ```
 
-## 🔒 Security
+##  Security
 
-### Security Features
 
-- ✅ Non-root container user
-- ✅ Read-only root filesystem
-- ✅ Security context constraints
-- ✅ Network policies
-- ✅ TLS/SSL encryption
-- ✅ Secrets encryption at rest
-- ✅ Regular vulnerability scanning
-- ✅ RBAC with least privilege
 
-### Security Scanning
-
-```bash
-# Scan Docker image
-trivy image fastapi-app:latest
-
-# Scan Python dependencies
-safety check -r app/requirements.txt
-
-# Scan code for security issues
-bandit -r app/
-```
-
-## 💰 Cost Optimization
-
-### Monthly Cost Breakdown (Production)
-
-| Service | Cost |
-|---------|------|
-| EKS Cluster | $73 |
-| EC2 Instances (3x t3.medium) | $95 |
-| ElastiCache (Redis) | $70 |
-| Load Balancer | $16 |
-| NAT Gateway | $32 |
-| Monitoring | $40 |
-| **Total** | **~$326/month** |
-
-**Optimization Opportunities:**
-- Reserved Instances: Save 30% (~$98/month)
-- Spot Instances: Save 50% on non-critical workloads
-- S3 Lifecycle Policies: Save 20% on storage
-
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Application**: FastAPI, Python 3.9, Redis
 - **Container**: Docker, Kubernetes
@@ -300,41 +259,4 @@ bandit -r app/
 - **Testing**: Pytest, K6, Locust
 - **Security**: Trivy, Bandit, Safety
 
-## 🤝 Contributing
 
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Authors
-
-- DevOps Engineer - Initial work
-
-## 🙏 Acknowledgments
-
-- FastAPI documentation
-- Kubernetes best practices
-- Terraform AWS modules
-- Prometheus community
-- Grafana Labs
-
-## 📞 Support
-
-For questions or support:
-- Open an issue on GitHub
-- Email: devops@example.com
-- Slack: #devops-platform
-
----
-
-**Status**: Production Ready ✅  
-**Last Updated**: February 8, 2026  
-**Version**: 1.0.0
